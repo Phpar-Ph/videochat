@@ -1,0 +1,36 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories (if you're using vendoring)
+vendor/
+
+# Go workspace file (optional, if using Go 1.18+ workspaces)
+go.work
+go.work.sum
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MacOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Build directories or temp files
+bin/
+dist/
+tmp/
