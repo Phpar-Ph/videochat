@@ -1,0 +1,48 @@
+<div
+  id="chat"
+  class="fixed-4 right-4 w-80 shadow-lg rounded-lg overflow-hidden z-50"
+>
+  <article class="bg-white border border-gray-300 rounded-lg">
+    <!-- Chat Header -->
+    <div
+      class="bg-blue-600 text-white px-4 py-2 cursor-pointer flex items-center justify-between"
+      onclick="slideToggle()"
+    >
+      <p class="font-semibold">Chat</p>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <!-- Chat Body -->
+    <div id="chat-body" class="max-h-96 overflow-y-auto bg-gray-50">
+      <div class="p-4 space-y-2">
+        <div id="messages" class="space-y-2">
+          <!-- Messages will appear here -->
+        </div>
+      </div>
+
+      <!-- Chat Form -->
+      <form id="chat-form" autocomplete="off" class="border-t border-gray-200">
+        <div class="p-2">
+          <div class="flex space-x-2">
+            <div class="flex-grow">
+              <input
+                class="w-full px-3 py-2 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                id="chat-input"
+                type="text"
+                placeholder="Type a message..."
+              />
+            </div>
+            <div>
+              <input
+                id="send-button"
+                class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 cursor-pointer text-sm"
+                type="submit"
+                value="Send"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>

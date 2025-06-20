@@ -2,10 +2,10 @@ package handlers
 
 import (
 	"videochat/pkg/chat"
-	w "vidoechat/pkg/webrtc"
+	w "videochat/pkg/webrtc"
 
 	"github.com/gofiber/contrib/websocket"
-	"github.com/gofiber/fiber/v3"
+	"github.com/gofiber/fiber/v2"
 
 )
 

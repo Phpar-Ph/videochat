@@ -1,8 +1,7 @@
 package main
-
 import (
-   "log"
-   "videochat/internal/server"
+	"log"
+	"videochat/internal/server"
 )
 
 

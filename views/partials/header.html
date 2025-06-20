@@ -1,0 +1,46 @@
+<body>
+    <section class="">
+        <div class="">
+            <header>
+                <nav class="" role="navigation" aria-label=" ">
+                    <div class="">
+                        <a  href="/"><strong>Akhil's</strong>Chat Room</a>
+                    </div>
+                    <div class="">
+                        <p class="">
+
+                        </p>
+                    </div>
+                    {{ if .Type }}
+                    <div class="">
+                        {{ if eq .Type "room" }}
+                        <div class="">
+                            <div class="">
+                                Share
+                                </a>
+                                <div class="">
+                                    <div class="">
+                                        <button class=" is-light is-fullwidth"
+                                            onclick="copyToClipboard('{{ .RoomLink }}')">Room Link</button>
+                                    </div>
+                                    <div class="navbar-item">
+                                        <button class="button is-light is-fullwidth"
+                                            onclick="copyToClipboard('{{ .StreamLink }}')">Stream Link</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-item">
+                            <a href="/" class="button is-danger">Leave Room</a>
+                        </div>
+                        {{ end }}
+                        {{ if eq .Type "stream" }}
+                        <div class="navbar-item">
+                            <a href="/" class="button is-danger">Leave Stream</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </nav>
+            </header>
+            <hr>
